@@ -16,7 +16,7 @@ public class GRPCServer {
   public static void main(String[] args) {
     GRPCServer server = new GRPCServer();
     try {
-      server.start(8080);
+      server.start(8443);
     }
     catch(Exception e) {
 

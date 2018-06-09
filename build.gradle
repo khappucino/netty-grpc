@@ -10,6 +10,9 @@ repositories {
 }
 
 dependencies {
+//    compile 'io.grpc:grpc-netty:1.12.0'
+    compile 'io.grpc:grpc-protobuf:1.12.0'
+//    compile 'io.grpc:grpc-stub:1.12.0'
     compile group: 'io.netty', name: 'netty-codec-http2', version: netty_version
     compile group: 'org.eclipse.jetty.alpn', name: 'alpn-api', version: jetty_alpn_api_version
     compile group: 'io.netty', name: 'netty-codec-http2', version: netty_version
