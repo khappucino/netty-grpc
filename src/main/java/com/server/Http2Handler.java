@@ -74,7 +74,8 @@ public final class Http2Handler extends Http2ConnectionHandler implements Http2F
     headers.add(HttpHeaderNames.CONTENT_TYPE, "application/grpc+proto");
 
     Http2Headers trailingHeaders = new DefaultHttp2Headers();
-    trailingHeaders.add("grpc-status", "0");
+    trailingHeaders.add("grpc-status", "8");
+    trailingHeaders.add("grpc-message", "%68%65%6c%6c%6f%2c%20%49%27%6d%20%62%72%69%61%6e");
 
     encoder().writeHeaders(ctx, streamId, headers, 0, false, ctx.newPromise());
     encoder().writeData(ctx, streamId, payload, 0, false, ctx.newPromise());
